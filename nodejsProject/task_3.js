@@ -1,13 +1,10 @@
-var fs = require('fs')
-
-
-var fs = require('fs')
-var path = require('path');
+const fs = require('fs')
+const path = require('path');
 const join = require('path');
 
 
-var oldPath = path.join(__dirname,'files_to_move');
-var newPath = path.join(__dirname,'moved_files');
+const oldPath = path.join(__dirname,'files_to_move');
+const newPath = path.join(__dirname,'moved_files');
 const file_list = fs.readdirSync(oldPath);
 
 function file_mover() {
